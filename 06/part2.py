@@ -18,6 +18,8 @@ def main(input_file):
 				start_position = (row,col)
 				visited.add((row,col))
 	
+	
+	
 	found = 0
 	for x in range(row+1):
 		for y in range(col+1):
