@@ -18,14 +18,12 @@ def valid(start_num,factors):
 	addnum = start_num - last_fact
 	if start_num // last_fact == start_num / last_fact:
 		mulnum = start_num // last_fact
-	
 	if(conc_str == str(start_num)[-len(conc_str):]) and str(start_num) != conc_str:
 		concnum = int( str(start_num)[:-len( str(conc_str) )])
 		
 	result_mul = False
 	result_add = False
 	result_conc = False
-	
 	if addnum > 0:
 		result_add = valid(addnum,factors.copy())
 	if mulnum != 0:
@@ -34,8 +32,6 @@ def valid(start_num,factors):
 		result_conc = valid(concnum,factors.copy())
 	
 	return result_add or result_mul or result_conc
-		
-		
 
 def main(input_file):
 	with open(input_file) as f:

@@ -26,10 +26,7 @@ def main(input_file):
 	result = 0
 	for line in input_lines:
 		if '|' in line:
-			if line.split('|')[0] not in rules:
-				rules[line.split('|')[0]] = [line.split('|')[1]]
-			else:
-				rules[line.split('|')[0]].append(line.split('|')[1])	
+			rules.setdefault(line.split('|')[0],list()).append(line.split('|')[1])
 		elif ',' in line:
 			newline = line.split(',').copy()
 			found = tester(rules,newline)
