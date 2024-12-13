@@ -125,8 +125,8 @@ if __name__ == "__main__":
 	assert test_value == expected_result,f"Test 2 failed, expected {expected_result}, result {test_value}"
 	test_value = main("TEST3")
 	expected_result = 236
-	assert test_value == expected_result,f"Test 2 failed, expected {expected_result}, result {test_value}"
+	assert test_value == expected_result,f"Test 3 failed, expected {expected_result}, result {test_value}"
 	test_value = main("TEST4")
 	expected_result = 368
-	assert test_value == expected_result,f"Test 2 failed, expected {expected_result}, result {test_value}"
+	assert test_value == expected_result,f"Test 4 failed, expected {expected_result}, result {test_value}"
 	print(main("INPUT"))
