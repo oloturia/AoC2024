@@ -3,7 +3,7 @@ from functools import lru_cache
 
 reg_list = set()
 
-@lru_cache(maxsize=10000000)
+@lru_cache
 def scanline(stripe):
 	global reg_list
 	count = 0
