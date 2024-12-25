@@ -27,7 +27,6 @@ def main(input_file):
 			if lock_index == 0:
 				locks.add(tuple(new_obj))
 
-
 		if key_index > 0:
 			for i,ch in enumerate(line):
 				if ch == '#':
